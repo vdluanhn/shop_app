@@ -18,7 +18,7 @@ class DefaultButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return SizedBox(
       width: double.infinity,
-      height: getProportionateScreenHeight(54),
+      height: getProportionateScreenWidth(54),
       child: ElevatedButton(
           onPressed: press,
           onLongPress: longPress,
@@ -29,7 +29,7 @@ class DefaultButton extends StatelessWidget {
           child: Text(
             text,
             style: TextStyle(
-              fontSize: getProportionateScreenHeight(18),
+              fontSize: getProportionateScreenWidth(18),
               color: Colors.white,
             ),
           )),

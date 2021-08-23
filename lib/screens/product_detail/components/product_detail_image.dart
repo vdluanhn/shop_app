@@ -25,7 +25,7 @@ class _ProductDetaiImageState extends State<ProductDetaiImage> {
         SizedBox(
           width: getProportionateScreenWidth(240),
           child: AspectRatio(
-              aspectRatio: 1,
+              aspectRatio: 1.3,
               child: Image.asset(widget.product.images[indexSelected])),
         ),
         Row(

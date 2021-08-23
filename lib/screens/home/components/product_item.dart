@@ -45,6 +45,8 @@ class ProductItem extends StatelessWidget {
                   ),
                   Text(
                     product.title,
+                    maxLines: 2,
+                    overflow: TextOverflow.ellipsis,
                     textAlign: TextAlign.left,
                     style: TextStyle(
                         color: Colors.black, fontWeight: FontWeight.w600),

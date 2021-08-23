@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shop_app/screens/carts/cart_screen.dart';
 import 'package:shop_app/screens/home/components/icon_button_with_counter.dart';
 
 import '../../../constants.dart';
@@ -40,6 +41,7 @@ class HomeHeader extends StatelessWidget {
             numOfItems: 0,
             onTap: () {
               print("You clicked icon shop");
+              Navigator.pushNamed(context, CartScreen.routeName);
             }),
         SizedBox(
           width: 10,
